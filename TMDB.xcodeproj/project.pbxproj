@@ -50,6 +50,9 @@
 		AADE93D42C39B6A8007603E5 /* FetchMoviesUseCaseImplementationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93D32C39B6A8007603E5 /* FetchMoviesUseCaseImplementationTest.swift */; };
 		AADE93D72C39BA92007603E5 /* MovieRepositoryImplementationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93D62C39BA92007603E5 /* MovieRepositoryImplementationTests.swift */; };
 		AADE93D92C39BAA3007603E5 /* MockJsonDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93D82C39BAA3007603E5 /* MockJsonDecode.swift */; };
+		AADE93DB2C39BFBD007603E5 /* MovieListCardMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93DA2C39BFBD007603E5 /* MovieListCardMapper.swift */; };
+		AADE93DD2C39BFE2007603E5 /* MovieListCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93DC2C39BFE2007603E5 /* MovieListCard.swift */; };
+		AADE93DF2C39C028007603E5 /* MovieListCardMapperImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93DE2C39C028007603E5 /* MovieListCardMapperImplementation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +111,9 @@
 		AADE93D32C39B6A8007603E5 /* FetchMoviesUseCaseImplementationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMoviesUseCaseImplementationTest.swift; sourceTree = "<group>"; };
 		AADE93D62C39BA92007603E5 /* MovieRepositoryImplementationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepositoryImplementationTests.swift; sourceTree = "<group>"; };
 		AADE93D82C39BAA3007603E5 /* MockJsonDecode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockJsonDecode.swift; sourceTree = "<group>"; };
+		AADE93DA2C39BFBD007603E5 /* MovieListCardMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListCardMapper.swift; sourceTree = "<group>"; };
+		AADE93DC2C39BFE2007603E5 /* MovieListCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListCard.swift; sourceTree = "<group>"; };
+		AADE93DE2C39C028007603E5 /* MovieListCardMapperImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListCardMapperImplementation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,8 +259,8 @@
 		AADE930F2C395CD0007603E5 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				AADE93182C395D5B007603E5 /* Mapper */,
 				AADE93172C395D53007603E5 /* MovieListView */,
+				AADE93182C395D5B007603E5 /* Mapper */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -337,6 +343,8 @@
 		AADE93182C395D5B007603E5 /* Mapper */ = {
 			isa = PBXGroup;
 			children = (
+				AADE93DA2C39BFBD007603E5 /* MovieListCardMapper.swift */,
+				AADE93DE2C39C028007603E5 /* MovieListCardMapperImplementation.swift */,
 			);
 			path = Mapper;
 			sourceTree = "<group>";
@@ -456,6 +464,7 @@
 		AADE93282C395EB3007603E5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AADE93DC2C39BFE2007603E5 /* MovieListCard.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -775,6 +784,7 @@
 				AADE93572C397956007603E5 /* MoviesUseCaseImplementation.swift in Sources */,
 				AADE93672C398639007603E5 /* MovieApiFactoryImplementation.swift in Sources */,
 				AADE93352C3967C4007603E5 /* AuthManager.swift in Sources */,
+				AADE93DB2C39BFBD007603E5 /* MovieListCardMapper.swift in Sources */,
 				AADE93552C397944007603E5 /* MoviesUseCase.swift in Sources */,
 				AADE93612C398453007603E5 /* MoviesDTOMapper.swift in Sources */,
 				AADE934A2C3970F0007603E5 /* NetworkChecker.swift in Sources */,
@@ -782,6 +792,7 @@
 				AADE932F2C3960C8007603E5 /* URLSessionProtocol.swift in Sources */,
 				AADE934C2C397388007603E5 /* DisconnectConnection.swift in Sources */,
 				AADE92E12C3957AB007603E5 /* ContentView.swift in Sources */,
+				AADE93DD2C39BFE2007603E5 /* MovieListCard.swift in Sources */,
 				AADE93422C396BC3007603E5 /* ErrorResponse.swift in Sources */,
 				AADE93482C396E77007603E5 /* PosterPathUrlMovie.swift in Sources */,
 				AADE933E2C396AAF007603E5 /* JsonDecoder + Extesntion.swift in Sources */,
@@ -792,6 +803,7 @@
 				AADE92DF2C3957AB007603E5 /* TMDBApp.swift in Sources */,
 				AADE93592C397A7A007603E5 /* TypeTabsMovie.swift in Sources */,
 				AADE93402C396B81007603E5 /* MovieErrors.swift in Sources */,
+				AADE93DF2C39C028007603E5 /* MovieListCardMapperImplementation.swift in Sources */,
 				AADE935F2C397F65007603E5 /* MovieItemDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

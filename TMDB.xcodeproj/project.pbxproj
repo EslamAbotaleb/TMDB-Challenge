@@ -14,6 +14,7 @@
 		AADE92F02C3957AD007603E5 /* TMDBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE92EF2C3957AD007603E5 /* TMDBTests.swift */; };
 		AADE932F2C3960C8007603E5 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE932E2C3960C8007603E5 /* URLSessionProtocol.swift */; };
 		AADE93312C3962BC007603E5 /* NetworkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93302C3962BC007603E5 /* NetworkRepository.swift */; };
+		AADE93332C3963B1007603E5 /* NetworkRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93322C3963B1007603E5 /* NetworkRepositoryImplementation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		AADE92EF2C3957AD007603E5 /* TMDBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBTests.swift; sourceTree = "<group>"; };
 		AADE932E2C3960C8007603E5 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
 		AADE93302C3962BC007603E5 /* NetworkRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRepository.swift; sourceTree = "<group>"; };
+		AADE93322C3963B1007603E5 /* NetworkRepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRepositoryImplementation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -403,6 +405,7 @@
 		AADE932D2C3960AF007603E5 /* Implementation */ = {
 			isa = PBXGroup;
 			children = (
+				AADE93322C3963B1007603E5 /* NetworkRepositoryImplementation.swift */,
 			);
 			path = Implementation;
 			sourceTree = "<group>";
@@ -510,6 +513,7 @@
 				AADE93312C3962BC007603E5 /* NetworkRepository.swift in Sources */,
 				AADE932F2C3960C8007603E5 /* URLSessionProtocol.swift in Sources */,
 				AADE92E12C3957AB007603E5 /* ContentView.swift in Sources */,
+				AADE93332C3963B1007603E5 /* NetworkRepositoryImplementation.swift in Sources */,
 				AADE92DF2C3957AB007603E5 /* TMDBApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

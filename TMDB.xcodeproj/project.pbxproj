@@ -98,8 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				AADE93082C395C3E007603E5 /* App */,
-				AADE934D2C39745B007603E5 /* Assets */,
 				AADE930A2C395C7D007603E5 /* Movie */,
+				AADE934D2C39745B007603E5 /* Assets */,
 				AADE93092C395C4C007603E5 /* Utilities */,
 				AADE932B2C395EF6007603E5 /* Network */,
 				AADE92E42C3957AD007603E5 /* Preview Content */,

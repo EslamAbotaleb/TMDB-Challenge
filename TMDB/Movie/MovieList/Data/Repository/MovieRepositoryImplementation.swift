@@ -19,8 +19,29 @@ struct MovieRepositoryImplementation: MoviesRepository {
         self.moviesFactory = moviesFactory
         self.jsonDecoder = jsonDecoder
     }
-    func fetchPopularMovies(result: @escaping FetchMoviesCompletionHandler) {
 
+    func fetchNowPlayingMovies(result: @escaping FetchMoviesCompletionHandler) {
+        guard let url = moviesFactory.createNowPlayingUrl().url else {
+            result(.failure(.loading))
+            return
+        }
+        networkRepository.fetchRequest(url) { resultResponse in
+            switch resultResponse {
+                case .success(let response):
+                    let (responseRequest, data) = response
+                    guard responseRequest.statusCode == 200 else {
+                        do {
+                            let errorResponse =  jsonDecoder.decodeRequestWithErrorHandling(APIErrorResponse.self, from: data)
+                            return result(.failure(.apiError(try errorResponse.get())))
+                        } catch {
+                            return result(.failure(.parsing))
+                        }
+                    }
+                    self.parseDataResponseRequest(data: data, result: result)
+                case .failure(_):
+                    result(.failure(.loading))
+            }
+        }
     }
 }
 

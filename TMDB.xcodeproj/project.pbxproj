@@ -76,6 +76,10 @@
 		AADE94102C39F91A007603E5 /* FetchMovieDetailsUseCaseImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE940F2C39F91A007603E5 /* FetchMovieDetailsUseCaseImplementation.swift */; };
 		AADE94122C39F951007603E5 /* MovieDetailsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE94112C39F951007603E5 /* MovieDetailsRepository.swift */; };
 		AADE94142C39F972007603E5 /* MovieDetailsRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE94132C39F972007603E5 /* MovieDetailsRepositoryImplementation.swift */; };
+		AADE94162C39FBFC007603E5 /* MovieDetailsUIMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE94152C39FBFC007603E5 /* MovieDetailsUIMapper.swift */; };
+		AADE94182C39FC0E007603E5 /* MovieDetailsUIMapperImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE94172C39FC0E007603E5 /* MovieDetailsUIMapperImplementation.swift */; };
+		AADE941A2C39FC42007603E5 /* MovieDetailsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE94192C39FC42007603E5 /* MovieDetailsCard.swift */; };
+		AADE941C2C39FC99007603E5 /* MovieDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE941B2C39FC99007603E5 /* MovieDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -160,6 +164,10 @@
 		AADE940F2C39F91A007603E5 /* FetchMovieDetailsUseCaseImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMovieDetailsUseCaseImplementation.swift; sourceTree = "<group>"; };
 		AADE94112C39F951007603E5 /* MovieDetailsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsRepository.swift; sourceTree = "<group>"; };
 		AADE94132C39F972007603E5 /* MovieDetailsRepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsRepositoryImplementation.swift; sourceTree = "<group>"; };
+		AADE94152C39FBFC007603E5 /* MovieDetailsUIMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsUIMapper.swift; sourceTree = "<group>"; };
+		AADE94172C39FC0E007603E5 /* MovieDetailsUIMapperImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsUIMapperImplementation.swift; sourceTree = "<group>"; };
+		AADE94192C39FC42007603E5 /* MovieDetailsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsCard.swift; sourceTree = "<group>"; };
+		AADE941B2C39FC99007603E5 /* MovieDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -494,6 +502,8 @@
 		AADE93242C395E83007603E5 /* Mapper */ = {
 			isa = PBXGroup;
 			children = (
+				AADE94152C39FBFC007603E5 /* MovieDetailsUIMapper.swift */,
+				AADE94172C39FC0E007603E5 /* MovieDetailsUIMapperImplementation.swift */,
 			);
 			path = Mapper;
 			sourceTree = "<group>";
@@ -501,6 +511,7 @@
 		AADE93252C395E95007603E5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AADE94192C39FC42007603E5 /* MovieDetailsCard.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -508,6 +519,7 @@
 		AADE93262C395E9B007603E5 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				AADE941B2C39FC99007603E5 /* MovieDetailsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -874,8 +886,10 @@
 				AADE93652C39862C007603E5 /* MovieApiFactory.swift in Sources */,
 				AADE93312C3962BC007603E5 /* NetworkRepository.swift in Sources */,
 				AADE93E52C39C5B4007603E5 /* LazyView.swift in Sources */,
+				AADE941A2C39FC42007603E5 /* MovieDetailsCard.swift in Sources */,
 				AADE93632C3984A1007603E5 /* MovieDTOMapperImplementation.swift in Sources */,
 				AADE93572C397956007603E5 /* MoviesUseCaseImplementation.swift in Sources */,
+				AADE941C2C39FC99007603E5 /* MovieDetailsViewModel.swift in Sources */,
 				AADE93F82C39E912007603E5 /* PopularMoviesView.swift in Sources */,
 				AADE94082C39F7DA007603E5 /* MovieDetailsEntity.swift in Sources */,
 				AADE93672C398639007603E5 /* MovieApiFactoryImplementation.swift in Sources */,
@@ -895,6 +909,7 @@
 				AADE93DD2C39BFE2007603E5 /* MovieListCard.swift in Sources */,
 				AADE93422C396BC3007603E5 /* ErrorResponse.swift in Sources */,
 				AADE93482C396E77007603E5 /* PosterPathUrlMovie.swift in Sources */,
+				AADE94182C39FC0E007603E5 /* MovieDetailsUIMapperImplementation.swift in Sources */,
 				AADE94102C39F91A007603E5 /* FetchMovieDetailsUseCaseImplementation.swift in Sources */,
 				AADE933E2C396AAF007603E5 /* JsonDecoder + Extesntion.swift in Sources */,
 				AADE93462C396CFE007603E5 /* UrlsMovie.swift in Sources */,
@@ -909,6 +924,7 @@
 				AADE93FC2C39F059007603E5 /* UpcomingMoviesView.swift in Sources */,
 				AADE940A2C39F871007603E5 /* MovieDetailsApiFactory.swift in Sources */,
 				AADE93402C396B81007603E5 /* MovieErrors.swift in Sources */,
+				AADE94162C39FBFC007603E5 /* MovieDetailsUIMapper.swift in Sources */,
 				AADE940E2C39F90C007603E5 /* FetchMovieDetailsUseCase.swift in Sources */,
 				AADE94042C39F79F007603E5 /* MovieDetailsDTOMapper.swift in Sources */,
 				AADE93DF2C39C028007603E5 /* MovieListCardMapperImplementation.swift in Sources */,

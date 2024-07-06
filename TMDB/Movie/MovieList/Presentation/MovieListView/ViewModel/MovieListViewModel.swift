@@ -41,7 +41,7 @@ class MovieListViewModel: ObservableObject {
                     self?.handleError(error!)
                 }
             }
-        }, typeTabMovieSelected: indexTab == 1 ? "NowPlaying" : indexTab == 2 ? "Popular" : "Upcoming")
+        }, typeTabMovieSelected: indexTab == 1 ? TypeTabsMovie.NowPlaying.rawValue : indexTab == 2 ? TypeTabsMovie.Popular.rawValue : TypeTabsMovie.UpcomingMovies.rawValue)
     }
     func updateTabIndex(_ index: Int) {
         if index == 1 {

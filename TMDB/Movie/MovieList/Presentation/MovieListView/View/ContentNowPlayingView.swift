@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentNowPlayingView: View {
+struct ContentMovieView: View {
     @ObservedObject var viewModel: MovieListViewModel
     var body: some View {
         ScrollView {

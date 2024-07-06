@@ -8,23 +8,10 @@
 import SwiftUI
 
 struct NowPlayingMovieView: View {
-
     @ObservedObject var viewModel: MovieListViewModel
 
     var body: some View {
-        NavigationView {
-            LoadingView(isShowing: .constant(viewModel.isLoading), errorMessage: .constant(self.viewModel.errorMessage ?? "")) {
-                VStack(alignment: .leading) {
-                    if self.viewModel.isEmpty && self.viewModel.errorMessage == "" {
-                        Text("No movies")
-                    } else {
-                        if self.viewModel.errorMessage == nil {
-                            ContentNowPlayingView(viewModel: viewModel)
-                        }
-                    }
-                }
-            }
-        }
+        TypeMovieView(viewModel: viewModel, typeTabMovie: TypeTabsMovie.NowPlaying.rawValue)
     }
 }
 

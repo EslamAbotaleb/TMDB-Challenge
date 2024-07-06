@@ -18,19 +18,21 @@ struct ContentView: View {
                 NavigationStack {
                     TabView(selection: $selectedTabIndex,
                             content:  {
-                        NowPlayingMovieView(viewModel: viewModel).tabItem { Text("Now Playing") }.tag(1)
-                        Text("Popular").tabItem { Text("Popular") }.tag(2)
+                        NowPlayingMovieView(viewModel: viewModel)
+                            .tabItem { Text("Now Playing") }.tag(1)
+                        PopularMoviesView(viewModel: viewModel)
+                            .tabItem { Text("Popular") }.tag(2)
                         Text("Upcoming Movies").tabItem { Text("Upcoming Movies") }.tag(3)
                     })
                     .onChange(of: selectedTabIndex) {
-
+                        viewModel.updateTabIndex(selectedTabIndex)
                     }
                 }
             } else {
                 DisconnectConnectionView()
             }
         }
-        .padding()
+
     }
 }
 #Preview {

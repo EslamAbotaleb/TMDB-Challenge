@@ -62,6 +62,8 @@
 		AADE93F22C39DFDF007603E5 /* MockMovieListCardMapperImpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93F12C39DFDF007603E5 /* MockMovieListCardMapperImpTests.swift */; };
 		AADE93F42C39E1A0007603E5 /* MovieCardUIBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93F32C39E1A0007603E5 /* MovieCardUIBuilder.swift */; };
 		AADE93F62C39E2E0007603E5 /* MovieListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93F52C39E2E0007603E5 /* MovieListViewModelTests.swift */; };
+		AADE93F82C39E912007603E5 /* PopularMoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93F72C39E912007603E5 /* PopularMoviesView.swift */; };
+		AADE93FA2C39EF03007603E5 /* TypeMoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93F92C39EF03007603E5 /* TypeMoviesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +134,8 @@
 		AADE93F12C39DFDF007603E5 /* MockMovieListCardMapperImpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMovieListCardMapperImpTests.swift; sourceTree = "<group>"; };
 		AADE93F32C39E1A0007603E5 /* MovieCardUIBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCardUIBuilder.swift; sourceTree = "<group>"; };
 		AADE93F52C39E2E0007603E5 /* MovieListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModelTests.swift; sourceTree = "<group>"; };
+		AADE93F72C39E912007603E5 /* PopularMoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMoviesView.swift; sourceTree = "<group>"; };
+		AADE93F92C39EF03007603E5 /* TypeMoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeMoviesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -493,7 +497,9 @@
 			children = (
 				AADE93E22C39C4BB007603E5 /* LoadingView.swift */,
 				AADE93E62C39C6F5007603E5 /* NowPlayingMovieView.swift */,
+				AADE93F72C39E912007603E5 /* PopularMoviesView.swift */,
 				AADE93E82C39C7BD007603E5 /* ContentNowPlayingView.swift */,
+				AADE93F92C39EF03007603E5 /* TypeMoviesView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -834,6 +840,7 @@
 				AADE93E52C39C5B4007603E5 /* LazyView.swift in Sources */,
 				AADE93632C3984A1007603E5 /* MovieDTOMapperImplementation.swift in Sources */,
 				AADE93572C397956007603E5 /* MoviesUseCaseImplementation.swift in Sources */,
+				AADE93F82C39E912007603E5 /* PopularMoviesView.swift in Sources */,
 				AADE93672C398639007603E5 /* MovieApiFactoryImplementation.swift in Sources */,
 				AADE93352C3967C4007603E5 /* AuthManager.swift in Sources */,
 				AADE93DB2C39BFBD007603E5 /* MovieListCardMapper.swift in Sources */,
@@ -851,6 +858,7 @@
 				AADE93482C396E77007603E5 /* PosterPathUrlMovie.swift in Sources */,
 				AADE933E2C396AAF007603E5 /* JsonDecoder + Extesntion.swift in Sources */,
 				AADE93462C396CFE007603E5 /* UrlsMovie.swift in Sources */,
+				AADE93FA2C39EF03007603E5 /* TypeMoviesView.swift in Sources */,
 				AADE93512C3977EF007603E5 /* MovieListEntity.swift in Sources */,
 				AADE935D2C397F59007603E5 /* MovieDataModel.swift in Sources */,
 				AADE93332C3963B1007603E5 /* NetworkRepositoryImplementation.swift in Sources */,

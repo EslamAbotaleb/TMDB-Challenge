@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+
 struct LoadingView<Content>: View where Content: View {
     @Binding var isShowing: Bool
     @Binding var errorMessage: String
@@ -20,6 +21,14 @@ struct LoadingView<Content>: View where Content: View {
                     .disabled(self.isShowing)
                     .blur(radius: self.isShowing ? 3 : 0)
                 Text(errorMessage)
+                    .frame(minWidth: 0,
+                           maxWidth: .infinity,
+                           minHeight: 0,
+                           maxHeight: .infinity,
+                           alignment: .center)
+                    .multilineTextAlignment(.center)
+                    .fontWeight(.bold)
+                    .padding(16)
             }
         }
     }

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var viewModel = MovieListViewModel()
     @Environment(NetworkMonitor.self) private var networkMonitor
     @State private var selectedTabIndex = 1
 
@@ -17,7 +18,7 @@ struct ContentView: View {
                 NavigationStack {
                     TabView(selection: $selectedTabIndex,
                             content:  {
-                        Text("Now Playing").tabItem { Text("Now Playing") }.tag(1)
+                        NowPlayingMovieView(viewModel: viewModel).tabItem { Text("Now Playing") }.tag(1)
                         Text("Popular").tabItem { Text("Popular") }.tag(2)
                         Text("Upcoming Movies").tabItem { Text("Upcoming Movies") }.tag(3)
                     })

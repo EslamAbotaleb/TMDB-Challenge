@@ -7,7 +7,7 @@
 
 import Foundation
 
-class MovieListTile {
+class MovieListTile: Identifiable {
     let title: String
     let posterPath: String
     let releaseDate: String
@@ -20,6 +20,7 @@ class MovieListTile {
         self.id = movie.id
     }
 }
+
 extension MovieListTile: Equatable {
     static func == (lhs: MovieListTile, rhs: MovieListTile) -> Bool {
         return lhs.title == rhs.title &&
@@ -28,5 +29,3 @@ extension MovieListTile: Equatable {
         lhs.id == rhs.id
     }
 }
-extension MovieListTile: Identifiable {}
-

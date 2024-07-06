@@ -41,7 +41,7 @@ extension NetworkRepositoryImplementation {
         request.timeoutInterval = 10
         request.allHTTPHeaderFields = [
             "accept": "application/json",
-            "Authorization": "Bearer "
+            "Authorization": "Bearer \(AuthManager.shared.token)"
         ]
         return request
     }

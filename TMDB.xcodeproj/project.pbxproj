@@ -56,6 +56,8 @@
 		AADE93E12C39C096007603E5 /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93E02C39C096007603E5 /* MovieListViewModel.swift */; };
 		AADE93E32C39C4BB007603E5 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93E22C39C4BB007603E5 /* LoadingView.swift */; };
 		AADE93E52C39C5B4007603E5 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93E42C39C5B4007603E5 /* LazyView.swift */; };
+		AADE93E72C39C6F5007603E5 /* NowPlayingMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93E62C39C6F5007603E5 /* NowPlayingMovieView.swift */; };
+		AADE93E92C39C7BD007603E5 /* ContentNowPlayingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93E82C39C7BD007603E5 /* ContentNowPlayingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +122,8 @@
 		AADE93E02C39C096007603E5 /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
 		AADE93E22C39C4BB007603E5 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		AADE93E42C39C5B4007603E5 /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
+		AADE93E62C39C6F5007603E5 /* NowPlayingMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingMovieView.swift; sourceTree = "<group>"; };
+		AADE93E82C39C7BD007603E5 /* ContentNowPlayingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentNowPlayingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -480,6 +484,8 @@
 			isa = PBXGroup;
 			children = (
 				AADE93E22C39C4BB007603E5 /* LoadingView.swift */,
+				AADE93E62C39C6F5007603E5 /* NowPlayingMovieView.swift */,
+				AADE93E82C39C7BD007603E5 /* ContentNowPlayingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -795,7 +801,9 @@
 				AADE93672C398639007603E5 /* MovieApiFactoryImplementation.swift in Sources */,
 				AADE93352C3967C4007603E5 /* AuthManager.swift in Sources */,
 				AADE93DB2C39BFBD007603E5 /* MovieListCardMapper.swift in Sources */,
+				AADE93E92C39C7BD007603E5 /* ContentNowPlayingView.swift in Sources */,
 				AADE93552C397944007603E5 /* MoviesUseCase.swift in Sources */,
+				AADE93E72C39C6F5007603E5 /* NowPlayingMovieView.swift in Sources */,
 				AADE93612C398453007603E5 /* MoviesDTOMapper.swift in Sources */,
 				AADE934A2C3970F0007603E5 /* NetworkChecker.swift in Sources */,
 				AADE93532C39786C007603E5 /* MoviesRepository.swift in Sources */,

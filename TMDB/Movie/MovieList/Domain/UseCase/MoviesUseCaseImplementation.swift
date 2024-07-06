@@ -10,7 +10,7 @@ import Foundation
 class MoviesUseCaseImplementation: MoviesUseCase {
     let movieRepository: MoviesRepository
 
-    init(movieRepository: MoviesRepository) {
+    init(movieRepository: MoviesRepository = MovieRepositoryImplementation()) {
         self.movieRepository = movieRepository
     }
 

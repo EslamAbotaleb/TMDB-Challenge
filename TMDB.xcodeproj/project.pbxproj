@@ -15,6 +15,7 @@
 		AADE932F2C3960C8007603E5 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE932E2C3960C8007603E5 /* URLSessionProtocol.swift */; };
 		AADE93312C3962BC007603E5 /* NetworkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93302C3962BC007603E5 /* NetworkRepository.swift */; };
 		AADE93332C3963B1007603E5 /* NetworkRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93322C3963B1007603E5 /* NetworkRepositoryImplementation.swift */; };
+		AADE93352C3967C4007603E5 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93342C3967C4007603E5 /* AuthManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		AADE932E2C3960C8007603E5 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
 		AADE93302C3962BC007603E5 /* NetworkRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRepository.swift; sourceTree = "<group>"; };
 		AADE93322C3963B1007603E5 /* NetworkRepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRepositoryImplementation.swift; sourceTree = "<group>"; };
+		AADE93342C3967C4007603E5 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +81,9 @@
 		AADE92DD2C3957AB007603E5 /* TMDB */ = {
 			isa = PBXGroup;
 			children = (
+				AADE93082C395C3E007603E5 /* App */,
 				AADE930A2C395C7D007603E5 /* Movie */,
 				AADE93092C395C4C007603E5 /* Utilities */,
-				AADE93082C395C3E007603E5 /* App */,
 				AADE932B2C395EF6007603E5 /* Network */,
 				AADE92E42C3957AD007603E5 /* Preview Content */,
 			);
@@ -117,6 +119,7 @@
 		AADE93092C395C4C007603E5 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				AADE93342C3967C4007603E5 /* AuthManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -511,6 +514,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AADE93312C3962BC007603E5 /* NetworkRepository.swift in Sources */,
+				AADE93352C3967C4007603E5 /* AuthManager.swift in Sources */,
 				AADE932F2C3960C8007603E5 /* URLSessionProtocol.swift in Sources */,
 				AADE92E12C3957AB007603E5 /* ContentView.swift in Sources */,
 				AADE93332C3963B1007603E5 /* NetworkRepositoryImplementation.swift in Sources */,

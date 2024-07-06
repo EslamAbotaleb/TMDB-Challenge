@@ -37,6 +37,7 @@ struct NetworkRepositoryImplementation: NetworkRepository {
 extension NetworkRepositoryImplementation {
     private func configureRequest(_ url: URL) -> URLRequest {
         var request = URLRequest(url: url)
+        AuthManager.shared.token =  "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhM2ZmNTdjZGVjMjMzMjJhZmQyNTFhZjIwODcyZWUwMyIsIm5iZiI6MTcyMDA3MzExOC45MDM3NTQsInN1YiI6IjVlNmI3MGUwMmYzYjE3MDAxMTQxODZhMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.CgsAndhJGBt--9fZJ4FEtV54OE2rHOop3RppfKVi1-U"
         request.timeoutInterval = 10
         request.allHTTPHeaderFields = [
             "accept": "application/json",

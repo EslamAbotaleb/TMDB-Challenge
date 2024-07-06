@@ -41,6 +41,10 @@
 		AADE937A2C399692007603E5 /* NetworkRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93712C3990F3007603E5 /* NetworkRepositoryImplementation.swift */; };
 		AADE93C02C39AFCB007603E5 /* MovieDataModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93BF2C39AFCB007603E5 /* MovieDataModelBuilder.swift */; };
 		AADE93C22C39AFE0007603E5 /* MovieItemDataModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93C12C39AFE0007603E5 /* MovieItemDataModelBuilder.swift */; };
+		AADE93C42C39B247007603E5 /* MockMoviesApiFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93C32C39B247007603E5 /* MockMoviesApiFactory.swift */; };
+		AADE93C72C39B29D007603E5 /* MovieDTOMapperImplementationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93C62C39B29D007603E5 /* MovieDTOMapperImplementationTest.swift */; };
+		AADE93C92C39B2AB007603E5 /* MockMovieDTOMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93C82C39B2AB007603E5 /* MockMovieDTOMapper.swift */; };
+		AADE93CC2C39B40B007603E5 /* MovieEntityBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93CB2C39B40B007603E5 /* MovieEntityBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +94,10 @@
 		AADE93712C3990F3007603E5 /* NetworkRepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRepositoryImplementation.swift; sourceTree = "<group>"; };
 		AADE93BF2C39AFCB007603E5 /* MovieDataModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDataModelBuilder.swift; sourceTree = "<group>"; };
 		AADE93C12C39AFE0007603E5 /* MovieItemDataModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieItemDataModelBuilder.swift; sourceTree = "<group>"; };
+		AADE93C32C39B247007603E5 /* MockMoviesApiFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMoviesApiFactory.swift; sourceTree = "<group>"; };
+		AADE93C62C39B29D007603E5 /* MovieDTOMapperImplementationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDTOMapperImplementationTest.swift; sourceTree = "<group>"; };
+		AADE93C82C39B2AB007603E5 /* MockMovieDTOMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMovieDTOMapper.swift; sourceTree = "<group>"; };
+		AADE93CB2C39B40B007603E5 /* MovieEntityBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieEntityBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -559,6 +567,7 @@
 		AADE93B92C39A3C7007603E5 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				AADE93CA2C39B3F9007603E5 /* Entity */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -573,6 +582,8 @@
 		AADE93BB2C39AF6E007603E5 /* mapper */ = {
 			isa = PBXGroup;
 			children = (
+				AADE93C52C39B288007603E5 /* Mock */,
+				AADE93C62C39B29D007603E5 /* MovieDTOMapperImplementationTest.swift */,
 			);
 			path = mapper;
 			sourceTree = "<group>";
@@ -596,8 +607,25 @@
 		AADE93BE2C39AF8F007603E5 /* Factory */ = {
 			isa = PBXGroup;
 			children = (
+				AADE93C32C39B247007603E5 /* MockMoviesApiFactory.swift */,
 			);
 			path = Factory;
+			sourceTree = "<group>";
+		};
+		AADE93C52C39B288007603E5 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				AADE93C82C39B2AB007603E5 /* MockMovieDTOMapper.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		AADE93CA2C39B3F9007603E5 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				AADE93CB2C39B40B007603E5 /* MovieEntityBuilder.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -734,8 +762,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AADE937A2C399692007603E5 /* NetworkRepositoryImplementation.swift in Sources */,
+				AADE93CC2C39B40B007603E5 /* MovieEntityBuilder.swift in Sources */,
 				AADE936E2C398E67007603E5 /* MockNetworkRepository.swift in Sources */,
 				AADE93C02C39AFCB007603E5 /* MovieDataModelBuilder.swift in Sources */,
+				AADE93C72C39B29D007603E5 /* MovieDTOMapperImplementationTest.swift in Sources */,
+				AADE93C92C39B2AB007603E5 /* MockMovieDTOMapper.swift in Sources */,
+				AADE93C42C39B247007603E5 /* MockMoviesApiFactory.swift in Sources */,
 				AADE93702C398E79007603E5 /* MockUrlSessionDataTask.swift in Sources */,
 				AADE936C2C398E53007603E5 /* MockUrlSession.swift in Sources */,
 				AADE93C22C39AFE0007603E5 /* MovieItemDataModelBuilder.swift in Sources */,

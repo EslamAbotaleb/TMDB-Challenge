@@ -26,21 +26,7 @@ struct MovieRepositoryImplementation: MoviesRepository {
             return
         }
         networkRepository.fetchRequest(url) { resultResponse in
-            switch resultResponse {
-                case .success(let response):
-                    let (responseRequest, data) = response
-                    guard responseRequest.statusCode == 200 else {
-                        do {
-                            let errorResponse =  jsonDecoder.decodeRequestWithErrorHandling(APIErrorResponse.self, from: data)
-                            return result(.failure(.apiError(try errorResponse.get())))
-                        } catch {
-                            return result(.failure(.parsing))
-                        }
-                    }
-                    self.parseDataResponseRequest(data: data, result: result)
-                case .failure(_):
-                    result(.failure(.loading))
-            }
+            resultResponseRequest(resultResponse: resultResponse, result: result)
         }
     }
     func fetchPopularMovies(result: @escaping FetchMoviesCompletionHandler) {
@@ -49,21 +35,7 @@ struct MovieRepositoryImplementation: MoviesRepository {
             return
         }
         networkRepository.fetchRequest((url)) { resultResponse in
-            switch resultResponse {
-                case .success(let response):
-                    let (responseRequest, data) = response
-                    guard responseRequest.statusCode == 200 else {
-                        do {
-                            let errorResponse =  jsonDecoder.decodeRequestWithErrorHandling(APIErrorResponse.self, from: data)
-                            return result(.failure(.apiError(try errorResponse.get())))
-                        } catch {
-                            return result(.failure(.parsing))
-                        }
-                    }
-                    self.parseDataResponseRequest(data: data, result: result)
-                case .failure:
-                    result(.failure(.loading))
-            }
+            resultResponseRequest(resultResponse: resultResponse, result: result)
         }
     }
     func fetchUpcomingMovies(result: @escaping FetchMoviesCompletionHandler) {
@@ -72,21 +44,26 @@ struct MovieRepositoryImplementation: MoviesRepository {
             return
         }
         networkRepository.fetchRequest((url)) { resultResponse in
-            switch resultResponse {
-                case .success(let response):
-                    let (responseRequest, data) = response
-                    guard responseRequest.statusCode == 200 else {
-                        do {
-                            let errorResponse =  jsonDecoder.decodeRequestWithErrorHandling(APIErrorResponse.self, from: data)
-                            return result(.failure(.apiError(try errorResponse.get())))
-                        } catch {
-                            return result(.failure(.parsing))
-                        }
+            resultResponseRequest(resultResponse: resultResponse, result: result)
+        }
+    }
+
+    private func resultResponseRequest(resultResponse: Result<(HTTPURLResponse, Data), Error>,
+                                       result: @escaping FetchMoviesCompletionHandler) {
+        switch resultResponse {
+            case .success(let response):
+                let (responseRequest, data) = response
+                guard responseRequest.statusCode == 200 else {
+                    do {
+                        let errorResponse =  jsonDecoder.decodeRequestWithErrorHandling(APIErrorResponse.self, from: data)
+                        return result(.failure(.apiError(try errorResponse.get())))
+                    } catch {
+                        return result(.failure(.parsing))
                     }
-                    self.parseDataResponseRequest(data: data, result: result)
-                case .failure:
-                    result(.failure(.loading))
-            }
+                }
+                self.parseDataResponseRequest(data: data, result: result)
+            case .failure:
+                result(.failure(.loading))
         }
     }
 }

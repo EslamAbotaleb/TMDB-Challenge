@@ -13,6 +13,7 @@
 		AADE92E62C3957AD007603E5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AADE92E52C3957AD007603E5 /* Preview Assets.xcassets */; };
 		AADE92F02C3957AD007603E5 /* TMDBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE92EF2C3957AD007603E5 /* TMDBTests.swift */; };
 		AADE932F2C3960C8007603E5 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE932E2C3960C8007603E5 /* URLSessionProtocol.swift */; };
+		AADE93312C3962BC007603E5 /* NetworkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93302C3962BC007603E5 /* NetworkRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		AADE92EB2C3957AD007603E5 /* TMDBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMDBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AADE92EF2C3957AD007603E5 /* TMDBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBTests.swift; sourceTree = "<group>"; };
 		AADE932E2C3960C8007603E5 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		AADE93302C3962BC007603E5 /* NetworkRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -393,6 +395,7 @@
 			isa = PBXGroup;
 			children = (
 				AADE932E2C3960C8007603E5 /* URLSessionProtocol.swift */,
+				AADE93302C3962BC007603E5 /* NetworkRepository.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -504,6 +507,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AADE93312C3962BC007603E5 /* NetworkRepository.swift in Sources */,
 				AADE932F2C3960C8007603E5 /* URLSessionProtocol.swift in Sources */,
 				AADE92E12C3957AB007603E5 /* ContentView.swift in Sources */,
 				AADE92DF2C3957AB007603E5 /* TMDBApp.swift in Sources */,

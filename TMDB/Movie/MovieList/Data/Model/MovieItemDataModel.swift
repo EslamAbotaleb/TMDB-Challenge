@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct MovieDataModel: Decodable {
+    let results: [MovieItemDataModel]?
+}

@@ -32,6 +32,8 @@
 		AADE935B2C397C91007603E5 /* MovieRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE935A2C397C91007603E5 /* MovieRepositoryImplementation.swift */; };
 		AADE935D2C397F59007603E5 /* MovieDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE935C2C397F59007603E5 /* MovieDataModel.swift */; };
 		AADE935F2C397F65007603E5 /* MovieItemDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE935E2C397F65007603E5 /* MovieItemDataModel.swift */; };
+		AADE93612C398453007603E5 /* MoviesDTOMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93602C398453007603E5 /* MoviesDTOMapper.swift */; };
+		AADE93632C3984A1007603E5 /* MovieDTOMapperImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93622C3984A1007603E5 /* MovieDTOMapperImplementation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		AADE935A2C397C91007603E5 /* MovieRepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepositoryImplementation.swift; sourceTree = "<group>"; };
 		AADE935C2C397F59007603E5 /* MovieDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDataModel.swift; sourceTree = "<group>"; };
 		AADE935E2C397F65007603E5 /* MovieItemDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieItemDataModel.swift; sourceTree = "<group>"; };
+		AADE93602C398453007603E5 /* MoviesDTOMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesDTOMapper.swift; sourceTree = "<group>"; };
+		AADE93622C3984A1007603E5 /* MovieDTOMapperImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDTOMapperImplementation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,6 +268,8 @@
 		AADE93142C395D14007603E5 /* Mapper */ = {
 			isa = PBXGroup;
 			children = (
+				AADE93602C398453007603E5 /* MoviesDTOMapper.swift */,
+				AADE93622C3984A1007603E5 /* MovieDTOMapperImplementation.swift */,
 			);
 			path = Mapper;
 			sourceTree = "<group>";
@@ -588,9 +594,11 @@
 				AADE935B2C397C91007603E5 /* MovieRepositoryImplementation.swift in Sources */,
 				AADE933B2C396A6C007603E5 /* JsonDecoder.swift in Sources */,
 				AADE93312C3962BC007603E5 /* NetworkRepository.swift in Sources */,
+				AADE93632C3984A1007603E5 /* MovieDTOMapperImplementation.swift in Sources */,
 				AADE93572C397956007603E5 /* MoviesUseCaseImplementation.swift in Sources */,
 				AADE93352C3967C4007603E5 /* AuthManager.swift in Sources */,
 				AADE93552C397944007603E5 /* MoviesUseCase.swift in Sources */,
+				AADE93612C398453007603E5 /* MoviesDTOMapper.swift in Sources */,
 				AADE934A2C3970F0007603E5 /* NetworkChecker.swift in Sources */,
 				AADE93532C39786C007603E5 /* MoviesRepository.swift in Sources */,
 				AADE932F2C3960C8007603E5 /* URLSessionProtocol.swift in Sources */,

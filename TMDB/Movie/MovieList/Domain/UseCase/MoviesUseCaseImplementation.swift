@@ -15,6 +15,22 @@ class MoviesUseCaseImplementation: MoviesUseCase {
     }
 
     func execute(_ completionHandler: @escaping MoviesUseCaseCompletionHandler, typeTabMovieSelected: String) {
-
+        switch typeTabMovieSelected {
+            case TypeTabsMovie.NowPlaying.rawValue:
+                movieRepository.fetchNowPlayingMovie { result in
+                    switch result {
+                        case .success(let responseResult):
+                            completionHandler(responseResult,nil)
+                        case .failure(let error):
+                            completionHandler([],error)
+                    }
+                }
+            case TypeTabsMovie.Popular.rawValue:
+                movieRepository.fetchPopularMovies { result in
+                }
+            default:
+                movieRepository.fetchUpcomingMovie { result in
+                }
+        }
     }
 }

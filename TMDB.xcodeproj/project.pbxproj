@@ -28,6 +28,7 @@
 		AADE93532C39786C007603E5 /* MoviesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93522C39786C007603E5 /* MoviesRepository.swift */; };
 		AADE93552C397944007603E5 /* MoviesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93542C397944007603E5 /* MoviesUseCase.swift */; };
 		AADE93572C397956007603E5 /* MoviesUseCaseImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93562C397956007603E5 /* MoviesUseCaseImplementation.swift */; };
+		AADE93592C397A7A007603E5 /* TypeTabsMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93582C397A7A007603E5 /* TypeTabsMovie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		AADE93522C39786C007603E5 /* MoviesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepository.swift; sourceTree = "<group>"; };
 		AADE93542C397944007603E5 /* MoviesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesUseCase.swift; sourceTree = "<group>"; };
 		AADE93562C397956007603E5 /* MoviesUseCaseImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesUseCaseImplementation.swift; sourceTree = "<group>"; };
+		AADE93582C397A7A007603E5 /* TypeTabsMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeTabsMovie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -453,6 +455,7 @@
 			children = (
 				AADE933F2C396B81007603E5 /* MovieErrors.swift */,
 				AADE93452C396CFE007603E5 /* UrlsMovie.swift */,
+				AADE93582C397A7A007603E5 /* TypeTabsMovie.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -590,6 +593,7 @@
 				AADE93512C3977EF007603E5 /* MovieListEntity.swift in Sources */,
 				AADE93332C3963B1007603E5 /* NetworkRepositoryImplementation.swift in Sources */,
 				AADE92DF2C3957AB007603E5 /* TMDBApp.swift in Sources */,
+				AADE93592C397A7A007603E5 /* TypeTabsMovie.swift in Sources */,
 				AADE93402C396B81007603E5 /* MovieErrors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

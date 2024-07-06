@@ -98,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				AADE93082C395C3E007603E5 /* App */,
+				AADE934D2C39745B007603E5 /* Assets */,
 				AADE930A2C395C7D007603E5 /* Movie */,
 				AADE93092C395C4C007603E5 /* Utilities */,
 				AADE932B2C395EF6007603E5 /* Network */,
@@ -127,7 +128,6 @@
 			children = (
 				AADE92DE2C3957AB007603E5 /* TMDBApp.swift */,
 				AADE92E02C3957AB007603E5 /* ContentView.swift */,
-				AADE92E22C3957AD007603E5 /* Assets.xcassets */,
 				AADE934B2C397388007603E5 /* DisconnectConnection.swift */,
 			);
 			path = App;
@@ -451,6 +451,14 @@
 				AADE933D2C396AAF007603E5 /* JsonDecoder + Extesntion.swift */,
 			);
 			path = Extenstions;
+			sourceTree = "<group>";
+		};
+		AADE934D2C39745B007603E5 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				AADE92E22C3957AD007603E5 /* Assets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

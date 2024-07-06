@@ -11,7 +11,6 @@
 		AADE92E12C3957AB007603E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE92E02C3957AB007603E5 /* ContentView.swift */; };
 		AADE92E32C3957AD007603E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AADE92E22C3957AD007603E5 /* Assets.xcassets */; };
 		AADE92E62C3957AD007603E5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AADE92E52C3957AD007603E5 /* Preview Assets.xcassets */; };
-		AADE92F02C3957AD007603E5 /* TMDBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE92EF2C3957AD007603E5 /* TMDBTests.swift */; };
 		AADE932F2C3960C8007603E5 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE932E2C3960C8007603E5 /* URLSessionProtocol.swift */; };
 		AADE93312C3962BC007603E5 /* NetworkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93302C3962BC007603E5 /* NetworkRepository.swift */; };
 		AADE93332C3963B1007603E5 /* NetworkRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93322C3963B1007603E5 /* NetworkRepositoryImplementation.swift */; };
@@ -36,6 +35,10 @@
 		AADE93632C3984A1007603E5 /* MovieDTOMapperImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93622C3984A1007603E5 /* MovieDTOMapperImplementation.swift */; };
 		AADE93652C39862C007603E5 /* MovieApiFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93642C39862C007603E5 /* MovieApiFactory.swift */; };
 		AADE93672C398639007603E5 /* MovieApiFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93662C398639007603E5 /* MovieApiFactoryImplementation.swift */; };
+		AADE936C2C398E53007603E5 /* MockUrlSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE936B2C398E53007603E5 /* MockUrlSession.swift */; };
+		AADE936E2C398E67007603E5 /* MockNetworkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE936D2C398E67007603E5 /* MockNetworkRepository.swift */; };
+		AADE93702C398E79007603E5 /* MockUrlSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE936F2C398E79007603E5 /* MockUrlSessionDataTask.swift */; };
+		AADE937A2C399692007603E5 /* NetworkRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93712C3990F3007603E5 /* NetworkRepositoryImplementation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +58,6 @@
 		AADE92E22C3957AD007603E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AADE92E52C3957AD007603E5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AADE92EB2C3957AD007603E5 /* TMDBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMDBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AADE92EF2C3957AD007603E5 /* TMDBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBTests.swift; sourceTree = "<group>"; };
 		AADE932E2C3960C8007603E5 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
 		AADE93302C3962BC007603E5 /* NetworkRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRepository.swift; sourceTree = "<group>"; };
 		AADE93322C3963B1007603E5 /* NetworkRepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRepositoryImplementation.swift; sourceTree = "<group>"; };
@@ -80,6 +82,10 @@
 		AADE93622C3984A1007603E5 /* MovieDTOMapperImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDTOMapperImplementation.swift; sourceTree = "<group>"; };
 		AADE93642C39862C007603E5 /* MovieApiFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieApiFactory.swift; sourceTree = "<group>"; };
 		AADE93662C398639007603E5 /* MovieApiFactoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieApiFactoryImplementation.swift; sourceTree = "<group>"; };
+		AADE936B2C398E53007603E5 /* MockUrlSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUrlSession.swift; sourceTree = "<group>"; };
+		AADE936D2C398E67007603E5 /* MockNetworkRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkRepository.swift; sourceTree = "<group>"; };
+		AADE936F2C398E79007603E5 /* MockUrlSessionDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUrlSessionDataTask.swift; sourceTree = "<group>"; };
+		AADE93712C3990F3007603E5 /* NetworkRepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRepositoryImplementation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,7 +148,7 @@
 		AADE92EE2C3957AD007603E5 /* TMDBTests */ = {
 			isa = PBXGroup;
 			children = (
-				AADE92EF2C3957AD007603E5 /* TMDBTests.swift */,
+				AADE93682C398E2D007603E5 /* Network */,
 			);
 			path = TMDBTests;
 			sourceTree = "<group>";
@@ -497,6 +503,33 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		AADE93682C398E2D007603E5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AADE936A2C398E3F007603E5 /* Implementation */,
+				AADE93692C398E34007603E5 /* MockSession */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		AADE93692C398E34007603E5 /* MockSession */ = {
+			isa = PBXGroup;
+			children = (
+				AADE936B2C398E53007603E5 /* MockUrlSession.swift */,
+				AADE936D2C398E67007603E5 /* MockNetworkRepository.swift */,
+				AADE936F2C398E79007603E5 /* MockUrlSessionDataTask.swift */,
+			);
+			path = MockSession;
+			sourceTree = "<group>";
+		};
+		AADE936A2C398E3F007603E5 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				AADE93712C3990F3007603E5 /* NetworkRepositoryImplementation.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -630,7 +663,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AADE92F02C3957AD007603E5 /* TMDBTests.swift in Sources */,
+				AADE937A2C399692007603E5 /* NetworkRepositoryImplementation.swift in Sources */,
+				AADE936E2C398E67007603E5 /* MockNetworkRepository.swift in Sources */,
+				AADE93702C398E79007603E5 /* MockUrlSessionDataTask.swift in Sources */,
+				AADE936C2C398E53007603E5 /* MockUrlSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -831,13 +867,17 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W8LN286WQ7;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "banquemisr.challenge05.-.TMDBTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TMDB.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TMDB";
 			};
 			name = Debug;
@@ -851,13 +891,17 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W8LN286WQ7;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "banquemisr.challenge05.-.TMDBTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TMDB.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TMDB";
 			};
 			name = Release;

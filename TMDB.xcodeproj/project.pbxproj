@@ -55,6 +55,7 @@
 		AADE93DF2C39C028007603E5 /* MovieListCardMapperImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93DE2C39C028007603E5 /* MovieListCardMapperImplementation.swift */; };
 		AADE93E12C39C096007603E5 /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93E02C39C096007603E5 /* MovieListViewModel.swift */; };
 		AADE93E32C39C4BB007603E5 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93E22C39C4BB007603E5 /* LoadingView.swift */; };
+		AADE93E52C39C5B4007603E5 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93E42C39C5B4007603E5 /* LazyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +119,7 @@
 		AADE93DE2C39C028007603E5 /* MovieListCardMapperImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListCardMapperImplementation.swift; sourceTree = "<group>"; };
 		AADE93E02C39C096007603E5 /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
 		AADE93E22C39C4BB007603E5 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		AADE93E42C39C5B4007603E5 /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 				AADE93412C396BC3007603E5 /* ErrorResponse.swift */,
 				AADE93472C396E77007603E5 /* PosterPathUrlMovie.swift */,
 				AADE93492C3970F0007603E5 /* NetworkChecker.swift */,
+				AADE93E42C39C5B4007603E5 /* LazyView.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -786,6 +789,7 @@
 				AADE933B2C396A6C007603E5 /* JsonDecoder.swift in Sources */,
 				AADE93652C39862C007603E5 /* MovieApiFactory.swift in Sources */,
 				AADE93312C3962BC007603E5 /* NetworkRepository.swift in Sources */,
+				AADE93E52C39C5B4007603E5 /* LazyView.swift in Sources */,
 				AADE93632C3984A1007603E5 /* MovieDTOMapperImplementation.swift in Sources */,
 				AADE93572C397956007603E5 /* MoviesUseCaseImplementation.swift in Sources */,
 				AADE93672C398639007603E5 /* MovieApiFactoryImplementation.swift in Sources */,

@@ -22,7 +22,7 @@ struct ContentView: View {
                             .tabItem { Text("Now Playing") }.tag(1)
                         PopularMoviesView(viewModel: viewModel)
                             .tabItem { Text("Popular") }.tag(2)
-                        Text("Upcoming Movies").tabItem { Text("Upcoming Movies") }.tag(3)
+                        UpcomingMoviesView(viewModel: viewModel).tabItem { Text("Upcoming Movies") }.tag(3)
                     })
                     .onChange(of: selectedTabIndex) {
                         viewModel.updateTabIndex(selectedTabIndex)

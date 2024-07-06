@@ -27,6 +27,7 @@ class MoviesUseCaseImplementation: MoviesUseCase {
                 }
             case TypeTabsMovie.Popular.rawValue:
                 movieRepository.fetchPopularMovies { result in
+                    
                     switch result {
                         case .success(let responseResult):
                             completionHandler(responseResult,nil)
@@ -36,6 +37,12 @@ class MoviesUseCaseImplementation: MoviesUseCase {
                 }
             default:
                 movieRepository.fetchUpcomingMovies { result in
+                    switch result {
+                        case .success(let responseResult):
+                            completionHandler(responseResult,nil)
+                        case .failure(let error):
+                            completionHandler([],error)
+                    }
                 }
         }
     }

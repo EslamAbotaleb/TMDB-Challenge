@@ -40,7 +40,7 @@ struct ContentMovieView: View {
                     .background(Color(UIColor.systemBackground))
                     .cornerRadius(8)
                     .shadow(radius: 4)
-                    .frame(maxWidth: .infinity) // Make the card full width
+                    .frame(maxWidth: .infinity)
                 }
             }
             .padding(8.0)

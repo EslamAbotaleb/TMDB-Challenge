@@ -66,6 +66,29 @@ struct MovieRepositoryImplementation: MoviesRepository {
             }
         }
     }
+    func fetchUpcomingMovies(result: @escaping FetchMoviesCompletionHandler) {
+        guard let url = moviesFactory.createUpcomingMoviesUrl().url else {
+            result(.failure(.loading))
+            return
+        }
+        networkRepository.fetchRequest((url)) { resultResponse in
+            switch resultResponse {
+                case .success(let response):
+                    let (responseRequest, data) = response
+                    guard responseRequest.statusCode == 200 else {
+                        do {
+                            let errorResponse =  jsonDecoder.decodeRequestWithErrorHandling(APIErrorResponse.self, from: data)
+                            return result(.failure(.apiError(try errorResponse.get())))
+                        } catch {
+                            return result(.failure(.parsing))
+                        }
+                    }
+                    self.parseDataResponseRequest(data: data, result: result)
+                case .failure:
+                    result(.failure(.loading))
+            }
+        }
+    }
 }
 
 extension MovieRepositoryImplementation {

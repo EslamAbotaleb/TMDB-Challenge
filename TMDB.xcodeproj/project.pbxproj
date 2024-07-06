@@ -64,6 +64,7 @@
 		AADE93F62C39E2E0007603E5 /* MovieListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93F52C39E2E0007603E5 /* MovieListViewModelTests.swift */; };
 		AADE93F82C39E912007603E5 /* PopularMoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93F72C39E912007603E5 /* PopularMoviesView.swift */; };
 		AADE93FA2C39EF03007603E5 /* TypeMoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93F92C39EF03007603E5 /* TypeMoviesView.swift */; };
+		AADE93FC2C39F059007603E5 /* UpcomingMoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93FB2C39F059007603E5 /* UpcomingMoviesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +137,7 @@
 		AADE93F52C39E2E0007603E5 /* MovieListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModelTests.swift; sourceTree = "<group>"; };
 		AADE93F72C39E912007603E5 /* PopularMoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMoviesView.swift; sourceTree = "<group>"; };
 		AADE93F92C39EF03007603E5 /* TypeMoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeMoviesView.swift; sourceTree = "<group>"; };
+		AADE93FB2C39F059007603E5 /* UpcomingMoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingMoviesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -495,10 +497,11 @@
 		AADE93292C395EB7007603E5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AADE93E22C39C4BB007603E5 /* LoadingView.swift */,
 				AADE93E62C39C6F5007603E5 /* NowPlayingMovieView.swift */,
 				AADE93F72C39E912007603E5 /* PopularMoviesView.swift */,
+				AADE93FB2C39F059007603E5 /* UpcomingMoviesView.swift */,
 				AADE93E82C39C7BD007603E5 /* ContentNowPlayingView.swift */,
+				AADE93E22C39C4BB007603E5 /* LoadingView.swift */,
 				AADE93F92C39EF03007603E5 /* TypeMoviesView.swift */,
 			);
 			path = View;
@@ -864,6 +867,7 @@
 				AADE93332C3963B1007603E5 /* NetworkRepositoryImplementation.swift in Sources */,
 				AADE92DF2C3957AB007603E5 /* TMDBApp.swift in Sources */,
 				AADE93592C397A7A007603E5 /* TypeTabsMovie.swift in Sources */,
+				AADE93FC2C39F059007603E5 /* UpcomingMoviesView.swift in Sources */,
 				AADE93402C396B81007603E5 /* MovieErrors.swift in Sources */,
 				AADE93DF2C39C028007603E5 /* MovieListCardMapperImplementation.swift in Sources */,
 				AADE935F2C397F65007603E5 /* MovieItemDataModel.swift in Sources */,

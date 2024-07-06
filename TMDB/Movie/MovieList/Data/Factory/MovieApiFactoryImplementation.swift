@@ -13,8 +13,8 @@ struct MovieApiFactoryImplementation: MovieApiFactory {
         components.host = HostNameBaseUrls.hostMovieDB.rawValue
         components.path = AbsolutePathUrl.nowPlaying.rawValue
         let queryItems: [URLQueryItem] = [
-          URLQueryItem(name: "language", value: "en-US"),
-          URLQueryItem(name: "page", value: "1"),
+            URLQueryItem(name: "language", value: "en-US"),
+            URLQueryItem(name: "page", value: "1"),
         ]
         components.queryItems = components.queryItems.map {$0 + queryItems} ?? queryItems
         return components
@@ -25,8 +25,20 @@ struct MovieApiFactoryImplementation: MovieApiFactory {
         components.host = HostNameBaseUrls.hostMovieDB.rawValue
         components.path = AbsolutePathUrl.popular.rawValue
         let queryItems: [URLQueryItem] = [
-          URLQueryItem(name: "language", value: "en-US"),
-          URLQueryItem(name: "page", value: "1"),
+            URLQueryItem(name: "language", value: "en-US"),
+            URLQueryItem(name: "page", value: "1"),
+        ]
+        components.queryItems = components.queryItems.map {$0 + queryItems} ?? queryItems
+        return components
+    }
+    func createUpcomingMoviesUrl() -> URLComponents {
+        var components = URLComponents()
+        components.scheme = "https"
+        components.host = HostNameBaseUrls.hostMovieDB.rawValue
+        components.path = AbsolutePathUrl.upcoming.rawValue
+        let queryItems: [URLQueryItem] = [
+            URLQueryItem(name: "language", value: "en-US"),
+            URLQueryItem(name: "page", value: "1"),
         ]
         components.queryItems = components.queryItems.map {$0 + queryItems} ?? queryItems
         return components

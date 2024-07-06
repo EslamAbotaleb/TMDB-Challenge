@@ -6,3 +6,6 @@
 //
 
 import Foundation
+protocol MovieDetailsDTOMapper {
+    func map(_ data: DetailsMovieItemDataModel) -> MovieDetailsEntity
+}

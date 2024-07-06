@@ -6,3 +6,9 @@
 //
 
 import Foundation
+struct MovieDetailsEntity {
+    let overView: String
+    let runTime: Int
+    let genres: [Genre]
+}
+extension MovieDetailsEntity: Equatable {}

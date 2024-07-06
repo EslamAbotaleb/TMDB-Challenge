@@ -18,32 +18,24 @@ class MoviesUseCaseImplementation: MoviesUseCase {
         switch typeTabMovieSelected {
             case TypeTabsMovie.NowPlaying.rawValue:
                 movieRepository.fetchNowPlayingMovies { result in
-                    switch result {
-                        case .success(let responseResult):
-                            completionHandler(responseResult,nil)
-                        case .failure(let error):
-                            completionHandler([],error)
-                    }
+                    self.resultFetchResponseRequest(completionHandler, result: result)
                 }
             case TypeTabsMovie.Popular.rawValue:
                 movieRepository.fetchPopularMovies { result in
-                    
-                    switch result {
-                        case .success(let responseResult):
-                            completionHandler(responseResult,nil)
-                        case .failure(let error):
-                            completionHandler([],error)
-                    }
+                    self.resultFetchResponseRequest(completionHandler, result: result)
                 }
             default:
                 movieRepository.fetchUpcomingMovies { result in
-                    switch result {
-                        case .success(let responseResult):
-                            completionHandler(responseResult,nil)
-                        case .failure(let error):
-                            completionHandler([],error)
-                    }
+                    self.resultFetchResponseRequest(completionHandler, result: result)
                 }
+        }
+    }
+    func resultFetchResponseRequest(_ completionHandler: @escaping MoviesUseCaseCompletionHandler, result: Result<[MovieListEntity], MovieErrors>) {
+        switch result {
+            case .success(let responseResult):
+                completionHandler(responseResult,nil)
+            case .failure(let error):
+                completionHandler([],error)
         }
     }
 }

@@ -32,7 +32,6 @@
 		AADE92E52C3957AD007603E5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AADE92EB2C3957AD007603E5 /* TMDBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMDBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AADE92EF2C3957AD007603E5 /* TMDBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBTests.swift; sourceTree = "<group>"; };
-		AADE92F92C3957AD007603E5 /* TMDBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +57,6 @@
 			children = (
 				AADE92DD2C3957AB007603E5 /* TMDB */,
 				AADE92EE2C3957AD007603E5 /* TMDBTests */,
-				AADE92F82C3957AD007603E5 /* TMDBUITests */,
 				AADE92DC2C3957AB007603E5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,14 +95,6 @@
 				AADE92EF2C3957AD007603E5 /* TMDBTests.swift */,
 			);
 			path = TMDBTests;
-			sourceTree = "<group>";
-		};
-		AADE92F82C3957AD007603E5 /* TMDBUITests */ = {
-			isa = PBXGroup;
-			children = (
-				AADE92F92C3957AD007603E5 /* TMDBUITests.swift */,
-			);
-			path = TMDBUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -8,17 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(NetworkMonitor.self) private var networkMonitor
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            if networkMonitor.isConnected {
+                Image(systemName: "globe")
+                    .imageScale(.large)
+                    .foregroundStyle(.tint)
+                Text("Hello, world!")
+            } else {
+                DisconnectConnectionView()
+            }
         }
         .padding()
     }
 }
-
 #Preview {
     ContentView()
+        .environment(NetworkMonitor())
 }

@@ -17,7 +17,7 @@ class MoviesUseCaseImplementation: MoviesUseCase {
     func execute(_ completionHandler: @escaping MoviesUseCaseCompletionHandler, typeTabMovieSelected: String) {
         switch typeTabMovieSelected {
             case TypeTabsMovie.NowPlaying.rawValue:
-                movieRepository.fetchNowPlayingMovie { result in
+                movieRepository.fetchNowPlayingMovies { result in
                     switch result {
                         case .success(let responseResult):
                             completionHandler(responseResult,nil)
@@ -29,7 +29,7 @@ class MoviesUseCaseImplementation: MoviesUseCase {
                 movieRepository.fetchPopularMovies { result in
                 }
             default:
-                movieRepository.fetchUpcomingMovie { result in
+                movieRepository.fetchUpcomingMovies { result in
                 }
         }
     }

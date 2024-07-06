@@ -14,8 +14,3 @@ protocol MoviesRepository {
     func fetchPopularMovies(result: @escaping FetchMoviesCompletionHandler)
     func fetchUpcomingMovies(result: @escaping FetchMoviesCompletionHandler)
 }
-extension MoviesRepository {
-    func fetchNowPlayingMovie(result: @escaping FetchMoviesCompletionHandler) {}
-    func fetchPopularMovie(result: @escaping FetchMoviesCompletionHandler) {}
-    func fetchUpcomingMovie(result: @escaping FetchMoviesCompletionHandler) {}
-}

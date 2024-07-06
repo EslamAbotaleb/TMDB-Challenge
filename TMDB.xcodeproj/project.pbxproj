@@ -29,6 +29,7 @@
 		AADE93552C397944007603E5 /* MoviesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93542C397944007603E5 /* MoviesUseCase.swift */; };
 		AADE93572C397956007603E5 /* MoviesUseCaseImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93562C397956007603E5 /* MoviesUseCaseImplementation.swift */; };
 		AADE93592C397A7A007603E5 /* TypeTabsMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93582C397A7A007603E5 /* TypeTabsMovie.swift */; };
+		AADE935B2C397C91007603E5 /* MovieRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE935A2C397C91007603E5 /* MovieRepositoryImplementation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		AADE93542C397944007603E5 /* MoviesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesUseCase.swift; sourceTree = "<group>"; };
 		AADE93562C397956007603E5 /* MoviesUseCaseImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesUseCaseImplementation.swift; sourceTree = "<group>"; };
 		AADE93582C397A7A007603E5 /* TypeTabsMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeTabsMovie.swift; sourceTree = "<group>"; };
+		AADE935A2C397C91007603E5 /* MovieRepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepositoryImplementation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +272,7 @@
 		AADE93162C395D20007603E5 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				AADE935A2C397C91007603E5 /* MovieRepositoryImplementation.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -576,6 +579,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AADE935B2C397C91007603E5 /* MovieRepositoryImplementation.swift in Sources */,
 				AADE933B2C396A6C007603E5 /* JsonDecoder.swift in Sources */,
 				AADE93312C3962BC007603E5 /* NetworkRepository.swift in Sources */,
 				AADE93572C397956007603E5 /* MoviesUseCaseImplementation.swift in Sources */,

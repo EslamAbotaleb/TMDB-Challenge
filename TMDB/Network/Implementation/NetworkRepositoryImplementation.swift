@@ -11,7 +11,7 @@ struct NetworkRepositoryImplementation: NetworkRepository {
 
     let urlSession: URLSessionRequestResponseProtocol
 
-    init(urlSession: URLSessionRequestResponseProtocol) {
+    init(urlSession: URLSessionRequestResponseProtocol = URLSession.shared) {
         self.urlSession = urlSession
     }
 

@@ -26,6 +26,8 @@
 		AADE934C2C397388007603E5 /* DisconnectConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE934B2C397388007603E5 /* DisconnectConnection.swift */; };
 		AADE93512C3977EF007603E5 /* MovieListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93502C3977EF007603E5 /* MovieListEntity.swift */; };
 		AADE93532C39786C007603E5 /* MoviesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93522C39786C007603E5 /* MoviesRepository.swift */; };
+		AADE93552C397944007603E5 /* MoviesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93542C397944007603E5 /* MoviesUseCase.swift */; };
+		AADE93572C397956007603E5 /* MoviesUseCaseImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93562C397956007603E5 /* MoviesUseCaseImplementation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		AADE934B2C397388007603E5 /* DisconnectConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisconnectConnection.swift; sourceTree = "<group>"; };
 		AADE93502C3977EF007603E5 /* MovieListEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListEntity.swift; sourceTree = "<group>"; };
 		AADE93522C39786C007603E5 /* MoviesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepository.swift; sourceTree = "<group>"; };
+		AADE93542C397944007603E5 /* MoviesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesUseCase.swift; sourceTree = "<group>"; };
+		AADE93562C397956007603E5 /* MoviesUseCaseImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesUseCaseImplementation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,6 +300,8 @@
 		AADE931A2C395D7E007603E5 /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
+				AADE93542C397944007603E5 /* MoviesUseCase.swift */,
+				AADE93562C397956007603E5 /* MoviesUseCaseImplementation.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -569,7 +575,9 @@
 			files = (
 				AADE933B2C396A6C007603E5 /* JsonDecoder.swift in Sources */,
 				AADE93312C3962BC007603E5 /* NetworkRepository.swift in Sources */,
+				AADE93572C397956007603E5 /* MoviesUseCaseImplementation.swift in Sources */,
 				AADE93352C3967C4007603E5 /* AuthManager.swift in Sources */,
+				AADE93552C397944007603E5 /* MoviesUseCase.swift in Sources */,
 				AADE934A2C3970F0007603E5 /* NetworkChecker.swift in Sources */,
 				AADE93532C39786C007603E5 /* MoviesRepository.swift in Sources */,
 				AADE932F2C3960C8007603E5 /* URLSessionProtocol.swift in Sources */,

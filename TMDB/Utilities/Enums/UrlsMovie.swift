@@ -8,7 +8,7 @@
 import Foundation
 
 enum HostNameBaseUrls: String {
-    case hostName = "api.themoviedb.org"
+    case hostMovieDB = "api.themoviedb.org"
     case baseImageUrl = "image.tmdb.org"
 }
 enum AbsolutePathUrl: String {

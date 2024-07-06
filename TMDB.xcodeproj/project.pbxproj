@@ -58,6 +58,10 @@
 		AADE93E52C39C5B4007603E5 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93E42C39C5B4007603E5 /* LazyView.swift */; };
 		AADE93E72C39C6F5007603E5 /* NowPlayingMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93E62C39C6F5007603E5 /* NowPlayingMovieView.swift */; };
 		AADE93E92C39C7BD007603E5 /* ContentNowPlayingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93E82C39C7BD007603E5 /* ContentNowPlayingView.swift */; };
+		AADE93F02C39DFC5007603E5 /* MockMovieListCardMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93EF2C39DFC5007603E5 /* MockMovieListCardMapper.swift */; };
+		AADE93F22C39DFDF007603E5 /* MockMovieListCardMapperImpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93F12C39DFDF007603E5 /* MockMovieListCardMapperImpTests.swift */; };
+		AADE93F42C39E1A0007603E5 /* MovieCardUIBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93F32C39E1A0007603E5 /* MovieCardUIBuilder.swift */; };
+		AADE93F62C39E2E0007603E5 /* MovieListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93F52C39E2E0007603E5 /* MovieListViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +128,10 @@
 		AADE93E42C39C5B4007603E5 /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
 		AADE93E62C39C6F5007603E5 /* NowPlayingMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingMovieView.swift; sourceTree = "<group>"; };
 		AADE93E82C39C7BD007603E5 /* ContentNowPlayingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentNowPlayingView.swift; sourceTree = "<group>"; };
+		AADE93EF2C39DFC5007603E5 /* MockMovieListCardMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMovieListCardMapper.swift; sourceTree = "<group>"; };
+		AADE93F12C39DFDF007603E5 /* MockMovieListCardMapperImpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMovieListCardMapperImpTests.swift; sourceTree = "<group>"; };
+		AADE93F32C39E1A0007603E5 /* MovieCardUIBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCardUIBuilder.swift; sourceTree = "<group>"; };
+		AADE93F52C39E2E0007603E5 /* MovieListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -610,6 +618,9 @@
 		AADE93BA2C39A3CB007603E5 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				AADE93EE2C39DF63007603E5 /* Mapper */,
+				AADE93ED2C39DF5E007603E5 /* Model */,
+				AADE93EC2C39DF58007603E5 /* ViewModel */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -689,6 +700,31 @@
 				AADE93D82C39BAA3007603E5 /* MockJsonDecode.swift */,
 			);
 			path = Mock;
+			sourceTree = "<group>";
+		};
+		AADE93EC2C39DF58007603E5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AADE93F52C39E2E0007603E5 /* MovieListViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AADE93ED2C39DF5E007603E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AADE93F32C39E1A0007603E5 /* MovieCardUIBuilder.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AADE93EE2C39DF63007603E5 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				AADE93EF2C39DFC5007603E5 /* MockMovieListCardMapper.swift */,
+				AADE93F12C39DFDF007603E5 /* MockMovieListCardMapperImpTests.swift */,
+			);
+			path = Mapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -841,10 +877,14 @@
 				AADE93C72C39B29D007603E5 /* MovieDTOMapperImplementationTest.swift in Sources */,
 				AADE93C92C39B2AB007603E5 /* MockMovieDTOMapper.swift in Sources */,
 				AADE93D92C39BAA3007603E5 /* MockJsonDecode.swift in Sources */,
+				AADE93F22C39DFDF007603E5 /* MockMovieListCardMapperImpTests.swift in Sources */,
 				AADE93C42C39B247007603E5 /* MockMoviesApiFactory.swift in Sources */,
 				AADE93702C398E79007603E5 /* MockUrlSessionDataTask.swift in Sources */,
 				AADE93D72C39BA92007603E5 /* MovieRepositoryImplementationTests.swift in Sources */,
+				AADE93F62C39E2E0007603E5 /* MovieListViewModelTests.swift in Sources */,
 				AADE936C2C398E53007603E5 /* MockUrlSession.swift in Sources */,
+				AADE93F42C39E1A0007603E5 /* MovieCardUIBuilder.swift in Sources */,
+				AADE93F02C39DFC5007603E5 /* MockMovieListCardMapper.swift in Sources */,
 				AADE93C22C39AFE0007603E5 /* MovieItemDataModelBuilder.swift in Sources */,
 				AADE93D22C39B5EF007603E5 /* MockFetchMoviesUseCase.swift in Sources */,
 			);
@@ -1003,9 +1043,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "banquemisr.challenge05.-.TMDB";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1032,9 +1076,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "banquemisr.challenge05.-.TMDB";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

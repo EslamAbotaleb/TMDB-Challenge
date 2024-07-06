@@ -73,9 +73,10 @@
 		AADE92DD2C3957AB007603E5 /* TMDB */ = {
 			isa = PBXGroup;
 			children = (
-				AADE92DE2C3957AB007603E5 /* TMDBApp.swift */,
-				AADE92E02C3957AB007603E5 /* ContentView.swift */,
-				AADE92E22C3957AD007603E5 /* Assets.xcassets */,
+				AADE930A2C395C7D007603E5 /* Movie */,
+				AADE93092C395C4C007603E5 /* Utilities */,
+				AADE93082C395C3E007603E5 /* App */,
+				AADE932B2C395EF6007603E5 /* Network */,
 				AADE92E42C3957AD007603E5 /* Preview Content */,
 			);
 			path = TMDB;
@@ -95,6 +96,293 @@
 				AADE92EF2C3957AD007603E5 /* TMDBTests.swift */,
 			);
 			path = TMDBTests;
+			sourceTree = "<group>";
+		};
+		AADE93082C395C3E007603E5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AADE92DE2C3957AB007603E5 /* TMDBApp.swift */,
+				AADE92E02C3957AB007603E5 /* ContentView.swift */,
+				AADE92E22C3957AD007603E5 /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AADE93092C395C4C007603E5 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		AADE930A2C395C7D007603E5 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				AADE930B2C395C8F007603E5 /* MovieList */,
+				AADE930C2C395C97007603E5 /* MovieDetails */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		AADE930B2C395C8F007603E5 /* MovieList */ = {
+			isa = PBXGroup;
+			children = (
+				AADE930D2C395CC2007603E5 /* Data */,
+				AADE930E2C395CC8007603E5 /* Domain */,
+				AADE930F2C395CD0007603E5 /* Presentation */,
+			);
+			path = MovieList;
+			sourceTree = "<group>";
+		};
+		AADE930C2C395C97007603E5 /* MovieDetails */ = {
+			isa = PBXGroup;
+			children = (
+				AADE93102C395CF3007603E5 /* Data */,
+				AADE93112C395CF7007603E5 /* Domain */,
+				AADE93122C395CFF007603E5 /* Presentation */,
+			);
+			path = MovieDetails;
+			sourceTree = "<group>";
+		};
+		AADE930D2C395CC2007603E5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AADE93162C395D20007603E5 /* Repository */,
+				AADE93152C395D1A007603E5 /* Factory */,
+				AADE93142C395D14007603E5 /* Mapper */,
+				AADE93132C395D0F007603E5 /* Model */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		AADE930E2C395CC8007603E5 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				AADE931B2C395D84007603E5 /* Entity */,
+				AADE931A2C395D7E007603E5 /* UseCase */,
+				AADE93192C395D6D007603E5 /* Repository */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		AADE930F2C395CD0007603E5 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				AADE93182C395D5B007603E5 /* Mapper */,
+				AADE93172C395D53007603E5 /* MovieListView */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		AADE93102C395CF3007603E5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AADE931F2C395E08007603E5 /* Model */,
+				AADE931E2C395E02007603E5 /* Mapper */,
+				AADE931D2C395DF7007603E5 /* Factory */,
+				AADE931C2C395DF3007603E5 /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		AADE93112C395CF7007603E5 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				AADE93222C395E29007603E5 /* Entity */,
+				AADE93212C395E21007603E5 /* UseCase */,
+				AADE93202C395E1A007603E5 /* Repository */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		AADE93122C395CFF007603E5 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				AADE93242C395E83007603E5 /* Mapper */,
+				AADE93232C395E7A007603E5 /* MovieDetailsView */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		AADE93132C395D0F007603E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AADE93142C395D14007603E5 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		AADE93152C395D1A007603E5 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		AADE93162C395D20007603E5 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		AADE93172C395D53007603E5 /* MovieListView */ = {
+			isa = PBXGroup;
+			children = (
+				AADE93282C395EB3007603E5 /* Model */,
+				AADE93292C395EB7007603E5 /* View */,
+				AADE932A2C395EBC007603E5 /* ViewModel */,
+			);
+			path = MovieListView;
+			sourceTree = "<group>";
+		};
+		AADE93182C395D5B007603E5 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		AADE93192C395D6D007603E5 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		AADE931A2C395D7E007603E5 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		AADE931B2C395D84007603E5 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		AADE931C2C395DF3007603E5 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		AADE931D2C395DF7007603E5 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		AADE931E2C395E02007603E5 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		AADE931F2C395E08007603E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AADE93202C395E1A007603E5 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		AADE93212C395E21007603E5 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		AADE93222C395E29007603E5 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		AADE93232C395E7A007603E5 /* MovieDetailsView */ = {
+			isa = PBXGroup;
+			children = (
+				AADE93252C395E95007603E5 /* Model */,
+				AADE93272C395EA2007603E5 /* View */,
+				AADE93262C395E9B007603E5 /* ViewModel */,
+			);
+			path = MovieDetailsView;
+			sourceTree = "<group>";
+		};
+		AADE93242C395E83007603E5 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		AADE93252C395E95007603E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AADE93262C395E9B007603E5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AADE93272C395EA2007603E5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AADE93282C395EB3007603E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AADE93292C395EB7007603E5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AADE932A2C395EBC007603E5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AADE932B2C395EF6007603E5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

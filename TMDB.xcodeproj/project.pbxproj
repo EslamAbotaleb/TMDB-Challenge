@@ -22,6 +22,7 @@
 		AADE93422C396BC3007603E5 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93412C396BC3007603E5 /* ErrorResponse.swift */; };
 		AADE93462C396CFE007603E5 /* UrlsMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93452C396CFE007603E5 /* UrlsMovie.swift */; };
 		AADE93482C396E77007603E5 /* PosterPathUrlMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93472C396E77007603E5 /* PosterPathUrlMovie.swift */; };
+		AADE934A2C3970F0007603E5 /* NetworkChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93492C3970F0007603E5 /* NetworkChecker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		AADE93412C396BC3007603E5 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		AADE93452C396CFE007603E5 /* UrlsMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlsMovie.swift; sourceTree = "<group>"; };
 		AADE93472C396E77007603E5 /* PosterPathUrlMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterPathUrlMovie.swift; sourceTree = "<group>"; };
+		AADE93492C3970F0007603E5 /* NetworkChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkChecker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 				AADE933A2C396A6C007603E5 /* JsonDecoder.swift */,
 				AADE93412C396BC3007603E5 /* ErrorResponse.swift */,
 				AADE93472C396E77007603E5 /* PosterPathUrlMovie.swift */,
+				AADE93492C3970F0007603E5 /* NetworkChecker.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -550,6 +553,7 @@
 				AADE933B2C396A6C007603E5 /* JsonDecoder.swift in Sources */,
 				AADE93312C3962BC007603E5 /* NetworkRepository.swift in Sources */,
 				AADE93352C3967C4007603E5 /* AuthManager.swift in Sources */,
+				AADE934A2C3970F0007603E5 /* NetworkChecker.swift in Sources */,
 				AADE932F2C3960C8007603E5 /* URLSessionProtocol.swift in Sources */,
 				AADE92E12C3957AB007603E5 /* ContentView.swift in Sources */,
 				AADE93422C396BC3007603E5 /* ErrorResponse.swift in Sources */,

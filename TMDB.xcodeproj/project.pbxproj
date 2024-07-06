@@ -39,6 +39,8 @@
 		AADE936E2C398E67007603E5 /* MockNetworkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE936D2C398E67007603E5 /* MockNetworkRepository.swift */; };
 		AADE93702C398E79007603E5 /* MockUrlSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE936F2C398E79007603E5 /* MockUrlSessionDataTask.swift */; };
 		AADE937A2C399692007603E5 /* NetworkRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93712C3990F3007603E5 /* NetworkRepositoryImplementation.swift */; };
+		AADE93C02C39AFCB007603E5 /* MovieDataModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93BF2C39AFCB007603E5 /* MovieDataModelBuilder.swift */; };
+		AADE93C22C39AFE0007603E5 /* MovieItemDataModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93C12C39AFE0007603E5 /* MovieItemDataModelBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +88,8 @@
 		AADE936D2C398E67007603E5 /* MockNetworkRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkRepository.swift; sourceTree = "<group>"; };
 		AADE936F2C398E79007603E5 /* MockUrlSessionDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUrlSessionDataTask.swift; sourceTree = "<group>"; };
 		AADE93712C3990F3007603E5 /* NetworkRepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRepositoryImplementation.swift; sourceTree = "<group>"; };
+		AADE93BF2C39AFCB007603E5 /* MovieDataModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDataModelBuilder.swift; sourceTree = "<group>"; };
+		AADE93C12C39AFE0007603E5 /* MovieItemDataModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieItemDataModelBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,7 @@
 		AADE92EE2C3957AD007603E5 /* TMDBTests */ = {
 			isa = PBXGroup;
 			children = (
+				AADE93B72C39A3BA007603E5 /* NowPlaying */,
 				AADE93682C398E2D007603E5 /* Network */,
 			);
 			path = TMDBTests;
@@ -530,6 +535,71 @@
 			path = Implementation;
 			sourceTree = "<group>";
 		};
+		AADE93B72C39A3BA007603E5 /* NowPlaying */ = {
+			isa = PBXGroup;
+			children = (
+				AADE93B82C39A3C3007603E5 /* Data */,
+				AADE93B92C39A3C7007603E5 /* Domain */,
+				AADE93BA2C39A3CB007603E5 /* Presentation */,
+			);
+			path = NowPlaying;
+			sourceTree = "<group>";
+		};
+		AADE93B82C39A3C3007603E5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AADE93BE2C39AF8F007603E5 /* Factory */,
+				AADE93BD2C39AF89007603E5 /* Repository */,
+				AADE93BC2C39AF84007603E5 /* Model */,
+				AADE93BB2C39AF6E007603E5 /* mapper */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		AADE93B92C39A3C7007603E5 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		AADE93BA2C39A3CB007603E5 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		AADE93BB2C39AF6E007603E5 /* mapper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = mapper;
+			sourceTree = "<group>";
+		};
+		AADE93BC2C39AF84007603E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AADE93BF2C39AFCB007603E5 /* MovieDataModelBuilder.swift */,
+				AADE93C12C39AFE0007603E5 /* MovieItemDataModelBuilder.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AADE93BD2C39AF89007603E5 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		AADE93BE2C39AF8F007603E5 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -665,8 +735,10 @@
 			files = (
 				AADE937A2C399692007603E5 /* NetworkRepositoryImplementation.swift in Sources */,
 				AADE936E2C398E67007603E5 /* MockNetworkRepository.swift in Sources */,
+				AADE93C02C39AFCB007603E5 /* MovieDataModelBuilder.swift in Sources */,
 				AADE93702C398E79007603E5 /* MockUrlSessionDataTask.swift in Sources */,
 				AADE936C2C398E53007603E5 /* MockUrlSession.swift in Sources */,
+				AADE93C22C39AFE0007603E5 /* MovieItemDataModelBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -53,4 +53,31 @@ struct MovieItemDataModel: Decodable {
         originalTitle = try values.decodeIfPresent(String.self, forKey: .originalTitle)
         originalLanguage = try values.decodeIfPresent(String.self, forKey: .originalLanguage)
     }
+    init(title: String?,
+         releaseDate: String?,
+         posterPath: String?,
+         adult: Bool?,
+         genreIds: [Int]?,
+         id: Int?,
+         originalLanguage: String?,
+         originalTitle: String?,
+         overview: String?,
+         popularity: Double?,
+         video: Bool?,
+         voteAverage: Double?,
+         voteCount: Int?) {
+        self.title = title
+        self.releaseDate = releaseDate
+        self.posterPath = posterPath
+        self.adult = adult
+        self.genreIds = genreIds
+        self.id = id
+        self.originalLanguage = originalLanguage
+        self.originalTitle = originalTitle
+        self.overview = overview
+        self.popularity = popularity
+        self.video = video
+        self.voteAverage = voteAverage
+        self.voteCount = voteCount
+    }
 }

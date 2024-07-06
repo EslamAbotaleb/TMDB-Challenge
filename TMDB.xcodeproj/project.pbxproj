@@ -57,7 +57,7 @@
 		AADE93E32C39C4BB007603E5 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93E22C39C4BB007603E5 /* LoadingView.swift */; };
 		AADE93E52C39C5B4007603E5 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93E42C39C5B4007603E5 /* LazyView.swift */; };
 		AADE93E72C39C6F5007603E5 /* NowPlayingMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93E62C39C6F5007603E5 /* NowPlayingMovieView.swift */; };
-		AADE93E92C39C7BD007603E5 /* ContentNowPlayingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93E82C39C7BD007603E5 /* ContentNowPlayingView.swift */; };
+		AADE93E92C39C7BD007603E5 /* ContentMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93E82C39C7BD007603E5 /* ContentMovieView.swift */; };
 		AADE93F02C39DFC5007603E5 /* MockMovieListCardMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93EF2C39DFC5007603E5 /* MockMovieListCardMapper.swift */; };
 		AADE93F22C39DFDF007603E5 /* MockMovieListCardMapperImpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93F12C39DFDF007603E5 /* MockMovieListCardMapperImpTests.swift */; };
 		AADE93F42C39E1A0007603E5 /* MovieCardUIBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93F32C39E1A0007603E5 /* MovieCardUIBuilder.swift */; };
@@ -80,6 +80,7 @@
 		AADE94182C39FC0E007603E5 /* MovieDetailsUIMapperImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE94172C39FC0E007603E5 /* MovieDetailsUIMapperImplementation.swift */; };
 		AADE941A2C39FC42007603E5 /* MovieDetailsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE94192C39FC42007603E5 /* MovieDetailsCard.swift */; };
 		AADE941C2C39FC99007603E5 /* MovieDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE941B2C39FC99007603E5 /* MovieDetailsViewModel.swift */; };
+		AADE941E2C39FFC8007603E5 /* MovieDetailsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE941D2C39FFC8007603E5 /* MovieDetailsContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,7 +146,7 @@
 		AADE93E22C39C4BB007603E5 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		AADE93E42C39C5B4007603E5 /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
 		AADE93E62C39C6F5007603E5 /* NowPlayingMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingMovieView.swift; sourceTree = "<group>"; };
-		AADE93E82C39C7BD007603E5 /* ContentNowPlayingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentNowPlayingView.swift; sourceTree = "<group>"; };
+		AADE93E82C39C7BD007603E5 /* ContentMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentMovieView.swift; sourceTree = "<group>"; };
 		AADE93EF2C39DFC5007603E5 /* MockMovieListCardMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMovieListCardMapper.swift; sourceTree = "<group>"; };
 		AADE93F12C39DFDF007603E5 /* MockMovieListCardMapperImpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMovieListCardMapperImpTests.swift; sourceTree = "<group>"; };
 		AADE93F32C39E1A0007603E5 /* MovieCardUIBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCardUIBuilder.swift; sourceTree = "<group>"; };
@@ -168,6 +169,7 @@
 		AADE94172C39FC0E007603E5 /* MovieDetailsUIMapperImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsUIMapperImplementation.swift; sourceTree = "<group>"; };
 		AADE94192C39FC42007603E5 /* MovieDetailsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsCard.swift; sourceTree = "<group>"; };
 		AADE941B2C39FC99007603E5 /* MovieDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewModel.swift; sourceTree = "<group>"; };
+		AADE941D2C39FFC8007603E5 /* MovieDetailsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -527,6 +529,7 @@
 		AADE93272C395EA2007603E5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AADE941D2C39FFC8007603E5 /* MovieDetailsContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -545,7 +548,7 @@
 				AADE93E62C39C6F5007603E5 /* NowPlayingMovieView.swift */,
 				AADE93F72C39E912007603E5 /* PopularMoviesView.swift */,
 				AADE93FB2C39F059007603E5 /* UpcomingMoviesView.swift */,
-				AADE93E82C39C7BD007603E5 /* ContentNowPlayingView.swift */,
+				AADE93E82C39C7BD007603E5 /* ContentMovieView.swift */,
 				AADE93E22C39C4BB007603E5 /* LoadingView.swift */,
 				AADE93F92C39EF03007603E5 /* TypeMoviesView.swift */,
 			);
@@ -891,11 +894,12 @@
 				AADE93572C397956007603E5 /* MoviesUseCaseImplementation.swift in Sources */,
 				AADE941C2C39FC99007603E5 /* MovieDetailsViewModel.swift in Sources */,
 				AADE93F82C39E912007603E5 /* PopularMoviesView.swift in Sources */,
+				AADE941E2C39FFC8007603E5 /* MovieDetailsContentView.swift in Sources */,
 				AADE94082C39F7DA007603E5 /* MovieDetailsEntity.swift in Sources */,
 				AADE93672C398639007603E5 /* MovieApiFactoryImplementation.swift in Sources */,
 				AADE93352C3967C4007603E5 /* AuthManager.swift in Sources */,
 				AADE93DB2C39BFBD007603E5 /* MovieListCardMapper.swift in Sources */,
-				AADE93E92C39C7BD007603E5 /* ContentNowPlayingView.swift in Sources */,
+				AADE93E92C39C7BD007603E5 /* ContentMovieView.swift in Sources */,
 				AADE93552C397944007603E5 /* MoviesUseCase.swift in Sources */,
 				AADE93E72C39C6F5007603E5 /* NowPlayingMovieView.swift in Sources */,
 				AADE93612C398453007603E5 /* MoviesDTOMapper.swift in Sources */,

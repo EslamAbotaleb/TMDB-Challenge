@@ -54,6 +54,7 @@
 		AADE93DD2C39BFE2007603E5 /* MovieListCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93DC2C39BFE2007603E5 /* MovieListCard.swift */; };
 		AADE93DF2C39C028007603E5 /* MovieListCardMapperImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93DE2C39C028007603E5 /* MovieListCardMapperImplementation.swift */; };
 		AADE93E12C39C096007603E5 /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93E02C39C096007603E5 /* MovieListViewModel.swift */; };
+		AADE93E32C39C4BB007603E5 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE93E22C39C4BB007603E5 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +117,7 @@
 		AADE93DC2C39BFE2007603E5 /* MovieListCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListCard.swift; sourceTree = "<group>"; };
 		AADE93DE2C39C028007603E5 /* MovieListCardMapperImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListCardMapperImplementation.swift; sourceTree = "<group>"; };
 		AADE93E02C39C096007603E5 /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
+		AADE93E22C39C4BB007603E5 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -474,6 +476,7 @@
 		AADE93292C395EB7007603E5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AADE93E22C39C4BB007603E5 /* LoadingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -808,6 +811,7 @@
 				AADE93402C396B81007603E5 /* MovieErrors.swift in Sources */,
 				AADE93DF2C39C028007603E5 /* MovieListCardMapperImplementation.swift in Sources */,
 				AADE935F2C397F65007603E5 /* MovieItemDataModel.swift in Sources */,
+				AADE93E32C39C4BB007603E5 /* LoadingView.swift in Sources */,
 				AADE93E12C39C096007603E5 /* MovieListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

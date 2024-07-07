@@ -7,6 +7,7 @@
 
 import Foundation
 struct MovieDetailsEntity {
+    let title: String
     let overView: String
     let runTime: Int
     let genres: [Genre]

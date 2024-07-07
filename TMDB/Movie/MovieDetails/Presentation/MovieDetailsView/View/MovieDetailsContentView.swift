@@ -12,8 +12,11 @@ struct MovieDetailsView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
-                Text(self.viewModel.result?.overview ?? "")
+                Text(self.viewModel.result?.title ?? "")
                     .font(.headline)
+                    .padding(8.0)
+                Text(self.viewModel.result?.overview ?? "")
+                    .font(.subheadline)
                     .padding(8.0)
                 Text("Run time: \(self.viewModel.result?.runtime ?? 0)")
                     .foregroundColor(.secondary)
@@ -33,6 +36,7 @@ struct MovieDetailsView: View {
                                 }
                             }
                             .padding(.vertical, 2.0)
+                            .padding(.bottom, 8.0)
                         }
                     }
                     .padding(8.0)
